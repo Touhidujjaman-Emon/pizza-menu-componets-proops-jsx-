@@ -38,4 +38,4 @@ AppComponent
   └── Footer
 ```
 
-![Components tree](components.png)
+![components tree](<components tree.png>)
