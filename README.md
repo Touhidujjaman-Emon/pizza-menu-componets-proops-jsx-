@@ -4,6 +4,11 @@
 
 ![Components](<about components.png>)
 
+### _2 important components as function rules in react_
+
+- The first letter of a component name should be capitalized
+- Function needs to retirn some markup(JSX) or null.
+
 ### Components tree
 
 - A hierarchical structure of React components
