@@ -49,3 +49,30 @@ AppComponent
 - "declarative" refers to a programming paradigm where you describe what you want to see in your UI, rather than how to achieve it.
 
 ![declarative](JSX-declarative.png)
+
+### Basic styling in React
+
+- If we want to write inline css we have to use _{{}}_ double curly brackets , 1st brackets for javaScript writing second for object. Becasue class is reserved word in js , So we use _className_ to add classe's in react.
+
+```js
+function Header() {
+  return (
+    <h1 style={{ color: "red", fontSize: "48px", fontStyle: "uppercase" }}>
+      Fast React Pizza CO.
+    </h1>
+  );
+
+  // Adding classes
+  // This type of styling is global scoped so it is not recomended for big apps
+
+  function App() {
+    return (
+      <div className="container">
+        <Header />
+        <Menu />
+        <Footer />
+      </div>
+    );
+  }
+}
+```
