@@ -52,7 +52,7 @@ AppComponent
 
 ### Basic styling in React
 
-- If we want to write inline css we have to use _{{}}_ double curly brackets , 1st brackets for javaScript writing second for object. Becasue class is reserved word in js , So we use _className_ to add classe's in react.
+- If we want to write inline css we have to use **{{}}** double curly brackets , 1st brackets for javaScript writing second for object. Becasue class is reserved word in js , So we use **className** to add classe's in react.
 
 ```js
 function Header() {
