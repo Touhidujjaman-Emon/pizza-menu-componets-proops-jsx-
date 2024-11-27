@@ -83,7 +83,7 @@ function Header() {
 - Way to pass data from parent to child component
 - Immutable (can't be changed by child component)
 - Passed like function arguments
-- Can be any data type (strings, numbers, booleans, arrays, objects, functions)
+- Can be any data type (strings, numbers, booleans, arrays, objects, functions eveb other components)
 
 ```js
 // Parent component
@@ -122,3 +122,7 @@ function Pizza(props) {
   );
 }
 ```
+
+### props are immutable but why ?
+
+![read-only-props](immutable-props.png)
