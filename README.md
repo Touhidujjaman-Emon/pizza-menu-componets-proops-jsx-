@@ -44,6 +44,10 @@ AppComponent
 
 ![JavaScript XML](JSX.png)
 
+### JSX vs HTML
+
+![jsx-vs-html](jsx-vs-html.png)
+
 ### JSX is declarative
 
 - "declarative" refers to a programming paradigm where you describe what you want to see in your UI, rather than how to achieve it.
