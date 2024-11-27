@@ -76,3 +76,49 @@ function Header() {
   }
 }
 ```
+
+## Props in React
+
+- Short for "properties"
+- Way to pass data from parent to child component
+- Immutable (can't be changed by child component)
+- Passed like function arguments
+- Can be any data type (strings, numbers, booleans, arrays, objects, functions)
+
+```js
+// Parent component
+function Menu() {
+  return (
+    <main className="menu">
+      <h2>Our Menu</h2>
+      <Pizza
+        name="Pizza Spinaci"
+        ingredients="tomato, mozarella, spinach, and ricotta cheese"
+        photoName="pizzas/spinaci.jpg"
+        price={18}
+      />
+
+      <Pizza
+        name="Pizza Funghi "
+        ingredients="tomato, mozarella"
+        photoName="pizzas/funghi.jpg"
+        price={18 + 3}
+      />
+    </main>
+  );
+}
+
+// Child component
+function Pizza(props) {
+  return (
+    <div className="pizza">
+      <img src={props.photoName} alt="pizza spinaci" />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price}</span>
+      </div>
+    </div>
+  );
+}
+```
