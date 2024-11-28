@@ -130,3 +130,13 @@ function Pizza(props) {
 ### props are immutable but why ?
 
 ![read-only-props](immutable-props.png)
+
+### Rendering a list
+
+```js
+<ul className="pizzas">
+  {pizzaData.map((pizza) => (
+    <Pizza pizzaObj={pizza} key={pizza.name} />
+  ))}
+</ul>
+```
