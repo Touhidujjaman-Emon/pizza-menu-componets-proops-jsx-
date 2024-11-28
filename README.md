@@ -131,7 +131,9 @@ function Pizza(props) {
 
 ![read-only-props](immutable-props.png)
 
-### Rendering a list
+### Rendering a list element
+
+- why not use **forEach**? because map creates a separate array with a **JSX** but forEach does not create separate array with jsx , So if we use forEach react can not render anything.
 
 ```js
 <ul className="pizzas">
