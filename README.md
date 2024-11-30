@@ -142,3 +142,34 @@ function Pizza(props) {
   ))}
 </ul>
 ```
+
+## Conditional Rendering
+
+### **&&** Operator
+
+- We can conditionally render something using the `&&` operator's short-circuiting behavior.
+- If the first value is true, the second value will be rendered. If the first value is false, the second value will not be rendered.
+
+**Example:**
+
+```js
+function Footer() {
+  const hour = new Date().getHours();
+  const openHour = 12;
+  const closeHour = 22;
+  const isOpen = openHour >= hour && hour <= closeHour;
+  return (
+    <footer className="footer">
+      {isOpen && (
+        <div className="order">
+          <p>
+            We are currently open until {closeHour}:00. Come visit us or order
+            online
+          </p>
+          <button className="btn">order</button>
+        </div>
+      )}
+    </footer>
+  );
+}
+```
