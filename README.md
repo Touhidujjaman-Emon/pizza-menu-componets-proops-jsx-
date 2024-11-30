@@ -145,6 +145,8 @@ function Pizza(props) {
 
 ## Conditional Rendering
 
+- why not use **if else** . Because if....else does not produce any value. They simply execute different blocks of code based on a condition. In React, we need to return a value (i.e., JSX elements) from our components
+
 ### **&&** Operator
 
 - We can conditionally render something using the `&&` operator's short-circuiting behavior.
@@ -167,6 +169,38 @@ function Footer() {
             online
           </p>
           <button className="btn">order</button>
+        </div>
+      )}
+    </footer>
+  );
+}
+```
+
+### Ternary **(?:)** operator
+
+- we can add a extra jsx if we use ternary operator
+
+**Example**
+
+```js
+function Footer() {
+  const hour = new Date().getHours();
+  const openHour = 12;
+  const closeHour = 22;
+  const isOpen = openHour >= hour && hour <= closeHour;
+  return (
+    <footer className="footer">
+      {isOpen ? (
+        <div className="order">
+          <p>
+            We are currently open until {closeHour}:00. Come visit us or order
+            online
+          </p>
+          <button className="btn">order</button>
+        </div>
+      ) : (
+        <div className="closed">
+          <p>We are currently closed. Please come back later.</p>
         </div>
       )}
     </footer>
