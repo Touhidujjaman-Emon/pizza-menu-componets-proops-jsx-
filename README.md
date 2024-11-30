@@ -178,7 +178,7 @@ function Footer() {
 
 ### Ternary **(?:)** operator
 
-- we can add a extra jsx if we use ternary operator
+- we can add an extra piece jsx if we use ternary operator
 
 **Example**
 
@@ -208,9 +208,9 @@ function Footer() {
 }
 ```
 
-### Conditional rendering with multiple return
+### Conditional rendering with multiple returns
 
-- When we need a different component conditionally not just a piece of jsx we can use conditional rendering with multiple return
+- When we need a different component conditionally not just a piece of jsx we can use conditional rendering with multiple returns
 
   **Example**
 
