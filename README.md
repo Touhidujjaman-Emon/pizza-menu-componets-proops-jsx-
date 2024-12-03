@@ -131,6 +131,16 @@ function Pizza(props) {
 
 ![read-only-props](immutable-props.png)
 
+### Destructuring Props in React
+
+```js
+const Greeting = ({ name }) => {
+  return <h1>Hello, {name}!</h1>;
+};
+```
+
+- In this example, we define a Greeting component that expects a name prop, which is extracted using destructuring props.
+
 ### Rendering a list element
 
 - why not use **forEach**? because map creates a separate array with a **JSX** but forEach does not create separate array with jsx , So if we use forEach react can not render anything.
