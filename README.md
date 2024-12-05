@@ -240,3 +240,32 @@ function Pizza(props) {
   );
 }
 ```
+
+## React fragments
+
+- **Definition:** A React Fragment is a type of component that allows you to group a list of children without adding extra nodes to the DOM.
+
+**Example:**
+
+```jsx
+function MyComponent() {
+  return (
+    <>
+      <h1>Hello</h1>
+      <p>World!</p>
+    </>
+  );
+}
+
+function MyComponentWithKey() {
+  return (
+    // If we want to add Key we have to write like this
+    <React.Fragment key="">
+      <h1>Hello</h1>
+      <p>World!</p>
+    </React.Fragment>
+  );
+}
+```
+
+- **Purpose:** Fragments are useful when you need to return multiple elements from a component, but don't want to add an extra HTML element to the DOM. They are also useful for reducing the number of DOM nodes in your application.

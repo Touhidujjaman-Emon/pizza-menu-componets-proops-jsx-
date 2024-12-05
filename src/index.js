@@ -66,15 +66,24 @@ function Header() {
 }
 
 function Menu() {
+  const numPizzas = pizzaData.length;
   return (
     <main className="menu">
       <h2>Our Menu</h2>
 
-      <ul className="pizzas">
-        {pizzaData.map((pizza) => (
-          <Pizza pizzaObj={pizza} key={pizza.name} />
-        ))}
-      </ul>
+      {numPizzas > 0 ? (
+        <React.Fragment key="cheese">
+          <p>We have 6 dishes , Wanna eat?</p>
+
+          <ul className="pizzas">
+            {pizzaData.map((pizza) => (
+              <Pizza pizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </React.Fragment>
+      ) : (
+        <p>We dont have any pizzas</p>
+      )}
 
       {/* <Pizza
         name="Pizza Spinaci"
