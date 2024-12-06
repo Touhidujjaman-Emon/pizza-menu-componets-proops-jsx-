@@ -6,7 +6,7 @@
 
 ### _2 important components as function rules in react_
 
-- The first letter of a component name should be capitalized
+- The first latter of a component name should be capitalized
 - Function needs to retirn some markup(JSX) or null.
 
 ### Components tree
